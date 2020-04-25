@@ -36,12 +36,20 @@ If you can understand it, you can probably also understand that messing with abo
 ```js
 // This file is "index.js" in the "root folder".
 const nFX = require ("./src/pkg/nFX/module.js");
+
+
 // To load a single file, do the following:
 // Please do not use "." right now, it is not yet fully built in.
-/* const File = nFX.main ("~/path/to/file"); */
-const config = nFX.main ("~/config.json"); // Config exists in the root folder as "config.json"
+// const File = nFX.main ("~/path/to/file"); //
+// also, config exists in the root folder as "config.json"
+const config = nFX.main ("~/config.json");
+
+
 // To use the loaded file, do the following:
-config.file (); // Outputs the json file
+// (This will output the json file from ./config.json)
+config.file ();
+
+
 // The folder class is still very much a wip though, but here are some examples
 const Commands = nFX.main ("~/Commands").loadChildren ({ whitelist: /\.js$/, endless: true });
 for (var i = 0; i < Commands.length; i++) {
