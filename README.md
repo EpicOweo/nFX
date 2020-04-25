@@ -40,8 +40,8 @@ const nFX = require ("./src/pkg/nFX/module.js");
 
 // To load a single file, do the following:
 // Please do not use "." right now, it is not yet fully built in.
-// const File = nFX.main ("~/path/to/file"); //
-// also, config exists in the root folder as "config.json"
+// const File = nFX.main ("~/path/to/file");
+// Config exists in the root folder as "config.json"
 const config = nFX.main ("~/config.json");
 
 
@@ -55,6 +55,21 @@ const Commands = nFX.main ("~/Commands").loadChildren ({ whitelist: /\.js$/, end
 for (var i = 0; i < Commands.length; i++) {
   console.log (command.path.file.name);
 };
+
+// Another example, for a discord bot.
+const Client;
+Client.Commands = new Map ();
+const nFX = require ("./src/pkg/nFX/module.js");
+nFX.main ("~/").loadChildren ({ whitelist: /\.js$/, endless: true }, ["Commands", "Events"]).forEach (child => {
+  if (!child.file) return;
+  if (child.path.parents.includes ("Commands") {
+    Client.Commands.set (child.path.file.name, child.file ().run);
+    child.file ().config.aliases.forEach (alias => {
+      Client.Commands.set (alias, child.file ().run);
+    });
+  } else Client.on (child.path.name, child.file ().bind (null, Client));
+  if (child.path.parents.includes ("Events")) Client.on (file.path.file.name, file.file ().bind (null, Client));
+})
 ```
 - Load children ({ whitelist }) is a RegExp that is -required- to load children matching the said RegExp.
 - Load children ({ endless }) is a Boolean that tells the system if it should load any and all sub-folders.
