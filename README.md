@@ -1,3 +1,5 @@
+## Project is for some reason marked as a virus, due to this there's going to be a huge delay in when this finishes.
+
 # nFX
 **[Releases](https://github.com/NaomixNemo/nFX/releases)\
 [Questions](https://github.com/NaomixNemo/nFX/tree/alpha#questions)\
