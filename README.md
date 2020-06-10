@@ -1,3 +1,6 @@
+Java version maintained by [EpicOweo](https://github.com/EpicOweo/)
+>https://github.com/EpicOweo/JnFX
+
 #### It's been a few months. I haven't at all stopped on this project, I've been spending a lot of time learning stuff, so I can improve my code, in readability, functionality and such. I'm also busy coding something for someone else.
 #### Anyways, I still have a lot planned for this, and expect another rewrite. If you want a time, a few months.
 
