@@ -1,3 +1,6 @@
+#### It's been a few months. I haven't at all stopped on this project, I've been spending a lot of time learning stuff, so I can improve my code, in readability, functionality and such. I'm also busy coding something for someone else.
+#### Anyways, I still have a lot planned for this, and expect another rewrite. If you want a time, a few months.
+
 ## Project is for some reason marked as a virus, due to this there's going to be a huge delay in when this finishes.
 
 ## I guess for now I have to make everything more readable and 'minimized', so you can see everything this does in barely any time.
